@@ -1,8 +1,9 @@
 FROM python:3.12
 
-RUN pip3 install pandas
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt 
 
-COPY peptide_reader.py /code/peptide_reader.py
-COPY peptide_list.csv /code/peptide_list.csv
+COPY . /app
+WORKDIR /app
 
-ENV PATH="/code:$PATH"
+CMD ["python3", 'app.py']

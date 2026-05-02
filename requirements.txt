@@ -1,0 +1,6 @@
+dash_ag_grid 
+dash_bootstrap_components 
+pandas 
+plotly
+dash 
+scikit-learn
