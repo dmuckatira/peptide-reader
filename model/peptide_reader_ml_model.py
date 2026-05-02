@@ -72,7 +72,7 @@ def train_model(data_file: str) -> None:
 
     Args:
         data_file: Path to peptide CSV file
-
+        
     Returns:
         None
     """
