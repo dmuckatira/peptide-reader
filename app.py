@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 from dash import Dash, Input, Output, callback, dcc, html, State
 import pickle
-from peptide_reader_ml_model import amino_acid_features
+from model.peptide_reader_ml_model import amino_acid_features
 import argparse
 import logging
 import socket
