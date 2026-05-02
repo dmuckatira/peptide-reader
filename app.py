@@ -43,7 +43,7 @@ logging.basicConfig(level=args.loglevel, format=format_str)
 # -------------------------
 
 try:
-    df = pd.read_csv('peptide_list_expanded.csv')
+    df = pd.read_csv('model/peptide_list_expanded.csv')
 
     with open('model/peptide_category_pipeline.pkl', 'rb') as f:
         peptide_model = pickle.load(f)
